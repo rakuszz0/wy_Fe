@@ -25,7 +25,7 @@ function Navbars(props) {
         const response = await API.get(`/channels`);
         return response.data.data;
     });
-
+    console.log("apaa", getChannels)
     // Mengambil id channel yang login
     const [state] = useContext(UserContext);
 
