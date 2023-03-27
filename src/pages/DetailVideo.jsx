@@ -155,7 +155,7 @@ export default function DetailVideo(props) {
         try {
             await API.patch(`/UpdateViews/${videoId}`);
             // to={`/video-detail/${value.id} `}
-            navigate(`/video-detail/${videoId} `);
+            // navigate(`/video-detail/${videoId} `);
             channelRefetch();
         } catch (err) {
             console.log(err);
